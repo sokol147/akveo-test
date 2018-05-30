@@ -1,9 +1,6 @@
 body, html{
 	margin:0;
 	height: 100%;
-	font-family: 'Roboto', sans-serif !important;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
 }
 html{
 	font-size: 16px;
@@ -22,14 +19,4 @@ ul,li{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-}
-@media (max-width: 320px){
-	html{
-		font-size: 14px;
-	}
-}
-@media (max-width: 991px){
-	html{
-		font-size: 15px;
-	}
 }
