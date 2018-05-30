@@ -1,0 +1,75 @@
+section.signup.mt-5
+	.container
+		.row
+			.col-12.offset-lg-1.col-lg-6
+				.signup__wrapper.p-3.p-md-5
+					h1.thank__header.text-center Sign Up
+					form.signup__form.needs-validation.pt-3(novalidate)
+						.form-row.mb-3
+							.col-12
+								label.required__label.mb-1(for='validationMail') Email address
+								input.form-control(type='text' id='validationMail' required)
+								.invalid-feedback User with such email already exists.
+						.form-row.mb-3
+							.col-12
+								label.required__label.mb-1(for='validationPassword') Password
+								input.form-control(type='password' id='validationPassword' required)
+								.invalid-feedback This field is mandatory.
+						.form-row.mb-3
+							.col-12
+								label.required__label.mb-1(for='validationPasswordConfirm') Re-type password
+								input.form-control(type='password' id='validationPasswordConfirm' required)
+								.invalid-feedback Password didn’t match.
+						.form-row.mb-3
+							.col-12
+								.signup__promo
+									label.signup__label.mb-1(for='promoCode') Have a promo code?
+									input.form-control(type='text' id='promoCode' placeholder='Enter code' required)
+									.invalid-feedback This promo code is not valid.
+									button.btn.btn-primary.promo__button Apply
+									i.promo-confirm
+						.form-row.mb-3
+							.col-12
+								p.mb-0.signup__gift Free forever with the gift code from our partner sites.
+								p.signup__gift--active.text-center Free Forever*
+						.form-row.mb-3
+							.col-12
+								.signup__terms.pt-4
+									.custom-control.custom-checkbox
+										input.custom-control-input(type='checkbox' id='terms' required)
+										label.custom-control-label(for='terms') I agree with 
+											a.label__link(href='#') terms and conditions 
+										.invalid-feedback You mast agree with our terms and conditions
+						.form-row.pt-3
+							.col-12
+								button.button-default.signup__button.mx-auto(type='submite') Start free trial
+				.row.mt-3
+					.col-12.text-center.copyright
+						p.copyright © 2012-2018 VPN. All rights reserved.
+			.col-12.col-lg-4.d-none.d-lg-block
+				.signup__sidebar.pt-5
+					h4.signup__header.pt-4.mb-3 Why choose VPNinvisible?
+					ul.reason__list.pb-4.mb-4
+						li.reason__item.mb-2 Simple to use
+						li.reason__item.mb-2 No Advertising
+						li.reason__item.mb-2 Hight speed
+						li.reason__item.mb-2 Unlimited traffic
+						li.reason__item 100% Safe
+					.work
+						.work__header.mb-3 Work with
+						ul.work__list.d-flex
+							li.work__item.mr-2
+								i.i-youtube.work-with__icon
+								p.work__text.text-center Youtube Videos
+							li.work__item.mr-2
+								i.i-casino.work-with__icon
+								p.work__text.text-center Online casinos
+							li.work__item.mr-2
+								i.i-adult.work-with__icon
+								p.work__text.text-center Adult websites
+							li.work__item.mr-2
+								i.i-shopping.work-with__icon
+								p.work__text.text-center Online Shopping
+							li.work__item
+								i.i-sharing.work-with__icon
+								p.work__text.text-center P2P Sharing

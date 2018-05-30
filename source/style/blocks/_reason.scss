@@ -1,0 +1,84 @@
+.reasons{
+	background-color: $lightBlue;
+	padding: 7rem 0;
+	&__btn{
+		width: 275px;
+		height: 58px;
+		line-height: 58px;
+		font-size: 23px;
+		font-weight: $medium;
+		text-align: center;
+	}
+	&__images{
+		width: 84px;
+		height: 84px;
+	}
+	&__text{
+		/* width: 157px; */
+		font-size: 21px;
+		font-weight: $medium;
+		color: $headerColor;
+		position: relative;
+		&:before{
+			content: url(../images/icon-check.svg);
+			height: 21px;
+			width: 21px;
+			left: -25px;
+			top: 1px;
+			position: absolute;
+			display: none;
+		}
+	}
+}
+@media (max-width: 991px){
+	.reasons__text{
+		width: 151px;
+		margin-left: 21px;
+		&:before{
+			display: block;
+		}
+	}
+}
+.section__header{
+	margin-bottom: 5rem;
+	&-black{
+		font-size: 53px;
+		max-width: 640px;
+		margin: 0 auto;
+		font-weight: $bold;
+		color: $headerColor;
+	}
+	&-red{
+		font-size: 32px;
+		color: $darkRed;
+		width: 100%;
+		font-weight: $bold;
+	}
+}
+@media (max-width: 480px){
+	.section__header-red{
+		font-size: 33px;
+	}
+	.section__header-black{
+		font-size: 28px;
+	}
+}
+@media (max-width: 320px){
+	.reasons{
+		padding: 2rem 0 1.75rem;
+		.section__header{
+			margin-bottom: 2rem;
+		}
+		.section__header-black{
+			font-size: 27px;
+		}
+	}
+}
+@media (max-width: 480px){
+	.reasons{
+		padding: 2.5rem 0 2.25rem;
+		.section__header{
+			margin-bottom: 3rem;
+		}
+	}
+}

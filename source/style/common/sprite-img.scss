@@ -1,0 +1,418 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$adult-websites-name: 'adult-websites';
+$adult-websites-x: 261px;
+$adult-websites-y: 223px;
+$adult-websites-offset-x: -261px;
+$adult-websites-offset-y: -223px;
+$adult-websites-width: 62px;
+$adult-websites-height: 62px;
+$adult-websites-total-width: 477px;
+$adult-websites-total-height: 305px;
+$adult-websites-image: '../images/sprite-img.png';
+$adult-websites: (261px, 223px, -261px, -223px, 62px, 62px, 477px, 305px, '../images/sprite-img.png', 'adult-websites', );
+$android-name: 'android';
+$android-x: 270px;
+$android-y: 134px;
+$android-offset-x: -270px;
+$android-offset-y: -134px;
+$android-width: 162px;
+$android-height: 62px;
+$android-total-width: 477px;
+$android-total-height: 305px;
+$android-image: '../images/sprite-img.png';
+$android: (270px, 134px, -270px, -134px, 162px, 62px, 477px, 305px, '../images/sprite-img.png', 'android', );
+$appstore-name: 'appstore';
+$appstore-x: 0px;
+$appstore-y: 0px;
+$appstore-offset-x: 0px;
+$appstore-offset-y: 0px;
+$appstore-width: 265px;
+$appstore-height: 73px;
+$appstore-total-width: 477px;
+$appstore-total-height: 305px;
+$appstore-image: '../images/sprite-img.png';
+$appstore: (0px, 0px, 0px, 0px, 265px, 73px, 477px, 305px, '../images/sprite-img.png', 'appstore', );
+$btn-appstore-name: 'btn-appstore';
+$btn-appstore-x: 0px;
+$btn-appstore-y: 156px;
+$btn-appstore-offset-x: 0px;
+$btn-appstore-offset-y: -156px;
+$btn-appstore-width: 207px;
+$btn-appstore-height: 62px;
+$btn-appstore-total-width: 477px;
+$btn-appstore-total-height: 305px;
+$btn-appstore-image: '../images/sprite-img.png';
+$btn-appstore: (0px, 156px, 0px, -156px, 207px, 62px, 477px, 305px, '../images/sprite-img.png', 'btn-appstore', );
+$btn-playstore-name: 'btn-playstore';
+$btn-playstore-x: 270px;
+$btn-playstore-y: 0px;
+$btn-playstore-offset-x: -270px;
+$btn-playstore-offset-y: 0px;
+$btn-playstore-width: 207px;
+$btn-playstore-height: 62px;
+$btn-playstore-total-width: 477px;
+$btn-playstore-total-height: 305px;
+$btn-playstore-image: '../images/sprite-img.png';
+$btn-playstore: (270px, 0px, -270px, 0px, 207px, 62px, 477px, 305px, '../images/sprite-img.png', 'btn-playstore', );
+$casino-name: 'casino';
+$casino-x: 194px;
+$casino-y: 223px;
+$casino-offset-x: -194px;
+$casino-offset-y: -223px;
+$casino-width: 62px;
+$casino-height: 62px;
+$casino-total-width: 477px;
+$casino-total-height: 305px;
+$casino-image: '../images/sprite-img.png';
+$casino: (194px, 223px, -194px, -223px, 62px, 62px, 477px, 305px, '../images/sprite-img.png', 'casino', );
+$ios-name: 'ios';
+$ios-x: 270px;
+$ios-y: 67px;
+$ios-offset-x: -270px;
+$ios-offset-y: -67px;
+$ios-width: 162px;
+$ios-height: 62px;
+$ios-total-width: 477px;
+$ios-total-height: 305px;
+$ios-image: '../images/sprite-img.png';
+$ios: (270px, 67px, -270px, -67px, 162px, 62px, 477px, 305px, '../images/sprite-img.png', 'ios', );
+$online-shopping-name: 'online-shopping';
+$online-shopping-x: 60px;
+$online-shopping-y: 223px;
+$online-shopping-offset-x: -60px;
+$online-shopping-offset-y: -223px;
+$online-shopping-width: 62px;
+$online-shopping-height: 62px;
+$online-shopping-total-width: 477px;
+$online-shopping-total-height: 305px;
+$online-shopping-image: '../images/sprite-img.png';
+$online-shopping: (60px, 223px, -60px, -223px, 62px, 62px, 477px, 305px, '../images/sprite-img.png', 'online-shopping', );
+$p2p-sharing-name: 'p2p-sharing';
+$p2p-sharing-x: 127px;
+$p2p-sharing-y: 223px;
+$p2p-sharing-offset-x: -127px;
+$p2p-sharing-offset-y: -223px;
+$p2p-sharing-width: 62px;
+$p2p-sharing-height: 62px;
+$p2p-sharing-total-width: 477px;
+$p2p-sharing-total-height: 305px;
+$p2p-sharing-image: '../images/sprite-img.png';
+$p2p-sharing: (127px, 223px, -127px, -223px, 62px, 62px, 477px, 305px, '../images/sprite-img.png', 'p2p-sharing', );
+$playstore-name: 'playstore';
+$playstore-x: 0px;
+$playstore-y: 78px;
+$playstore-offset-x: 0px;
+$playstore-offset-y: -78px;
+$playstore-width: 265px;
+$playstore-height: 73px;
+$playstore-total-width: 477px;
+$playstore-total-height: 305px;
+$playstore-image: '../images/sprite-img.png';
+$playstore: (0px, 78px, 0px, -78px, 265px, 73px, 477px, 305px, '../images/sprite-img.png', 'playstore', );
+$red-arrow-name: 'red-arrow';
+$red-arrow-x: 0px;
+$red-arrow-y: 223px;
+$red-arrow-offset-x: 0px;
+$red-arrow-offset-y: -223px;
+$red-arrow-width: 55px;
+$red-arrow-height: 82px;
+$red-arrow-total-width: 477px;
+$red-arrow-total-height: 305px;
+$red-arrow-image: '../images/sprite-img.png';
+$red-arrow: (0px, 223px, 0px, -223px, 55px, 82px, 477px, 305px, '../images/sprite-img.png', 'red-arrow', );
+$youtube-name: 'youtube';
+$youtube-x: 328px;
+$youtube-y: 223px;
+$youtube-offset-x: -328px;
+$youtube-offset-y: -223px;
+$youtube-width: 62px;
+$youtube-height: 62px;
+$youtube-total-width: 477px;
+$youtube-total-height: 305px;
+$youtube-image: '../images/sprite-img.png';
+$youtube: (328px, 223px, -328px, -223px, 62px, 62px, 477px, 305px, '../images/sprite-img.png', 'youtube', );
+$adult-websites-2x-name: 'adult-websites@2x';
+$adult-websites-2x-x: 522px;
+$adult-websites-2x-y: 446px;
+$adult-websites-2x-offset-x: -522px;
+$adult-websites-2x-offset-y: -446px;
+$adult-websites-2x-width: 124px;
+$adult-websites-2x-height: 124px;
+$adult-websites-2x-total-width: 954px;
+$adult-websites-2x-total-height: 610px;
+$adult-websites-2x-image: '../images/sprite-img@2x.png';
+$adult-websites-2x: (522px, 446px, -522px, -446px, 124px, 124px, 954px, 610px, '../images/sprite-img@2x.png', 'adult-websites@2x', );
+$android-2x-name: 'android@2x';
+$android-2x-x: 540px;
+$android-2x-y: 268px;
+$android-2x-offset-x: -540px;
+$android-2x-offset-y: -268px;
+$android-2x-width: 324px;
+$android-2x-height: 124px;
+$android-2x-total-width: 954px;
+$android-2x-total-height: 610px;
+$android-2x-image: '../images/sprite-img@2x.png';
+$android-2x: (540px, 268px, -540px, -268px, 324px, 124px, 954px, 610px, '../images/sprite-img@2x.png', 'android@2x', );
+$appstore-2x-name: 'appstore@2x';
+$appstore-2x-x: 0px;
+$appstore-2x-y: 0px;
+$appstore-2x-offset-x: 0px;
+$appstore-2x-offset-y: 0px;
+$appstore-2x-width: 530px;
+$appstore-2x-height: 146px;
+$appstore-2x-total-width: 954px;
+$appstore-2x-total-height: 610px;
+$appstore-2x-image: '../images/sprite-img@2x.png';
+$appstore-2x: (0px, 0px, 0px, 0px, 530px, 146px, 954px, 610px, '../images/sprite-img@2x.png', 'appstore@2x', );
+$btn-appstore-2x-name: 'btn-appstore@2x';
+$btn-appstore-2x-x: 0px;
+$btn-appstore-2x-y: 312px;
+$btn-appstore-2x-offset-x: 0px;
+$btn-appstore-2x-offset-y: -312px;
+$btn-appstore-2x-width: 414px;
+$btn-appstore-2x-height: 124px;
+$btn-appstore-2x-total-width: 954px;
+$btn-appstore-2x-total-height: 610px;
+$btn-appstore-2x-image: '../images/sprite-img@2x.png';
+$btn-appstore-2x: (0px, 312px, 0px, -312px, 414px, 124px, 954px, 610px, '../images/sprite-img@2x.png', 'btn-appstore@2x', );
+$btn-playstore-2x-name: 'btn-playstore@2x';
+$btn-playstore-2x-x: 540px;
+$btn-playstore-2x-y: 0px;
+$btn-playstore-2x-offset-x: -540px;
+$btn-playstore-2x-offset-y: 0px;
+$btn-playstore-2x-width: 414px;
+$btn-playstore-2x-height: 124px;
+$btn-playstore-2x-total-width: 954px;
+$btn-playstore-2x-total-height: 610px;
+$btn-playstore-2x-image: '../images/sprite-img@2x.png';
+$btn-playstore-2x: (540px, 0px, -540px, 0px, 414px, 124px, 954px, 610px, '../images/sprite-img@2x.png', 'btn-playstore@2x', );
+$casino-2x-name: 'casino@2x';
+$casino-2x-x: 388px;
+$casino-2x-y: 446px;
+$casino-2x-offset-x: -388px;
+$casino-2x-offset-y: -446px;
+$casino-2x-width: 124px;
+$casino-2x-height: 124px;
+$casino-2x-total-width: 954px;
+$casino-2x-total-height: 610px;
+$casino-2x-image: '../images/sprite-img@2x.png';
+$casino-2x: (388px, 446px, -388px, -446px, 124px, 124px, 954px, 610px, '../images/sprite-img@2x.png', 'casino@2x', );
+$ios-2x-name: 'ios@2x';
+$ios-2x-x: 540px;
+$ios-2x-y: 134px;
+$ios-2x-offset-x: -540px;
+$ios-2x-offset-y: -134px;
+$ios-2x-width: 324px;
+$ios-2x-height: 124px;
+$ios-2x-total-width: 954px;
+$ios-2x-total-height: 610px;
+$ios-2x-image: '../images/sprite-img@2x.png';
+$ios-2x: (540px, 134px, -540px, -134px, 324px, 124px, 954px, 610px, '../images/sprite-img@2x.png', 'ios@2x', );
+$online-shopping-2x-name: 'online-shopping@2x';
+$online-shopping-2x-x: 120px;
+$online-shopping-2x-y: 446px;
+$online-shopping-2x-offset-x: -120px;
+$online-shopping-2x-offset-y: -446px;
+$online-shopping-2x-width: 124px;
+$online-shopping-2x-height: 124px;
+$online-shopping-2x-total-width: 954px;
+$online-shopping-2x-total-height: 610px;
+$online-shopping-2x-image: '../images/sprite-img@2x.png';
+$online-shopping-2x: (120px, 446px, -120px, -446px, 124px, 124px, 954px, 610px, '../images/sprite-img@2x.png', 'online-shopping@2x', );
+$p2p-sharing-2x-name: 'p2p-sharing@2x';
+$p2p-sharing-2x-x: 254px;
+$p2p-sharing-2x-y: 446px;
+$p2p-sharing-2x-offset-x: -254px;
+$p2p-sharing-2x-offset-y: -446px;
+$p2p-sharing-2x-width: 124px;
+$p2p-sharing-2x-height: 124px;
+$p2p-sharing-2x-total-width: 954px;
+$p2p-sharing-2x-total-height: 610px;
+$p2p-sharing-2x-image: '../images/sprite-img@2x.png';
+$p2p-sharing-2x: (254px, 446px, -254px, -446px, 124px, 124px, 954px, 610px, '../images/sprite-img@2x.png', 'p2p-sharing@2x', );
+$playstore-2x-name: 'playstore@2x';
+$playstore-2x-x: 0px;
+$playstore-2x-y: 156px;
+$playstore-2x-offset-x: 0px;
+$playstore-2x-offset-y: -156px;
+$playstore-2x-width: 530px;
+$playstore-2x-height: 146px;
+$playstore-2x-total-width: 954px;
+$playstore-2x-total-height: 610px;
+$playstore-2x-image: '../images/sprite-img@2x.png';
+$playstore-2x: (0px, 156px, 0px, -156px, 530px, 146px, 954px, 610px, '../images/sprite-img@2x.png', 'playstore@2x', );
+$red-arrow-2x-name: 'red-arrow@2x';
+$red-arrow-2x-x: 0px;
+$red-arrow-2x-y: 446px;
+$red-arrow-2x-offset-x: 0px;
+$red-arrow-2x-offset-y: -446px;
+$red-arrow-2x-width: 110px;
+$red-arrow-2x-height: 164px;
+$red-arrow-2x-total-width: 954px;
+$red-arrow-2x-total-height: 610px;
+$red-arrow-2x-image: '../images/sprite-img@2x.png';
+$red-arrow-2x: (0px, 446px, 0px, -446px, 110px, 164px, 954px, 610px, '../images/sprite-img@2x.png', 'red-arrow@2x', );
+$youtube-2x-name: 'youtube@2x';
+$youtube-2x-x: 656px;
+$youtube-2x-y: 446px;
+$youtube-2x-offset-x: -656px;
+$youtube-2x-offset-y: -446px;
+$youtube-2x-width: 124px;
+$youtube-2x-height: 124px;
+$youtube-2x-total-width: 954px;
+$youtube-2x-total-height: 610px;
+$youtube-2x-image: '../images/sprite-img@2x.png';
+$youtube-2x: (656px, 446px, -656px, -446px, 124px, 124px, 954px, 610px, '../images/sprite-img@2x.png', 'youtube@2x', );
+$spritesheet-width: 477px;
+$spritesheet-height: 305px;
+$spritesheet-image: '../images/sprite-img.png';
+$spritesheet-sprites: ($adult-websites, $android, $appstore, $btn-appstore, $btn-playstore, $casino, $ios, $online-shopping, $p2p-sharing, $playstore, $red-arrow, $youtube, );
+$spritesheet: (477px, 305px, '../images/sprite-img.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 954px;
+$retina-spritesheet-height: 610px;
+$retina-spritesheet-image: '../images/sprite-img@2x.png';
+$retina-spritesheet-sprites: ($adult-websites-2x, $android-2x, $appstore-2x, $btn-appstore-2x, $btn-playstore-2x, $casino-2x, $ios-2x, $online-shopping-2x, $p2p-sharing-2x, $playstore-2x, $red-arrow-2x, $youtube-2x, );
+$retina-spritesheet: (954px, 610px, '../images/sprite-img@2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$adult-websites-group-name: 'adult-websites';
+$adult-websites-group: ('adult-websites', $adult-websites, $adult-websites-2x, );
+$android-group-name: 'android';
+$android-group: ('android', $android, $android-2x, );
+$appstore-group-name: 'appstore';
+$appstore-group: ('appstore', $appstore, $appstore-2x, );
+$btn-appstore-group-name: 'btn-appstore';
+$btn-appstore-group: ('btn-appstore', $btn-appstore, $btn-appstore-2x, );
+$btn-playstore-group-name: 'btn-playstore';
+$btn-playstore-group: ('btn-playstore', $btn-playstore, $btn-playstore-2x, );
+$casino-group-name: 'casino';
+$casino-group: ('casino', $casino, $casino-2x, );
+$ios-group-name: 'ios';
+$ios-group: ('ios', $ios, $ios-2x, );
+$online-shopping-group-name: 'online-shopping';
+$online-shopping-group: ('online-shopping', $online-shopping, $online-shopping-2x, );
+$p2p-sharing-group-name: 'p2p-sharing';
+$p2p-sharing-group: ('p2p-sharing', $p2p-sharing, $p2p-sharing-2x, );
+$playstore-group-name: 'playstore';
+$playstore-group: ('playstore', $playstore, $playstore-2x, );
+$red-arrow-group-name: 'red-arrow';
+$red-arrow-group: ('red-arrow', $red-arrow, $red-arrow-2x, );
+$youtube-group-name: 'youtube';
+$youtube-group: ('youtube', $youtube, $youtube-2x, );
+$retina-groups: ($adult-websites-group, $android-group, $appstore-group, $btn-appstore-group, $btn-playstore-group, $casino-group, $ios-group, $online-shopping-group, $p2p-sharing-group, $playstore-group, $red-arrow-group, $youtube-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

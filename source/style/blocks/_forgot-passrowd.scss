@@ -1,0 +1,75 @@
+.forgot{
+	.oops-alert{
+		background-color: $red;
+		padding: 12px 15px;
+		border-radius: .25rem;
+		color: $white !important;
+		p{
+			font-size: 15px;
+			font-weight: $medium;
+		}
+	}
+	&__wrapper{
+		border: 1px solid $borderGrey;
+		padding: 1px;
+		background-color: $lightBlue;
+	}
+	.thank__header{
+		font-size: 49px;
+	}
+	.send-to{
+		font-size: 15px;
+		color: $textColor;
+	}
+	.copyright{
+		font-size: 15px;
+		color: rgba(91,96,107,.42);
+	}
+}
+.forgot__form{
+	position: relative;
+}
+.forgot-btn{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 15px;
+	font-weight: $medium !important;
+	background-color: $blue !important;
+	border-color: $blue !important;
+	border-radius: 0 .25rem .25rem 0 !important;
+	&:hover{
+		background-color: darken($blue, 10%) !important;
+	}
+}
+@media (max-width: 767px){
+	.forgot-btn{
+		position: initial;
+		width: 100%;
+		border-radius: .25rem !important;
+		font-size: 14px !important;
+	}
+	.forgot-input{
+		border-radius: .25rem !important;
+	}
+}
+.message-to-top{
+	display: flex;
+	flex-direction: column;
+	.oops-alert{
+		order: -1;
+	}
+}
+@media (max-width: 480px){
+	.forgot .thank__header{
+		font-size: 40px;
+	}
+}
+@media (max-width: 320px){
+	.oops-alert{
+		padding: 6px 7px;
+	}
+}
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid{
+	background-color: $lightRed;
+}

@@ -1,0 +1,172 @@
+.signup{
+	.invalid-feedback{
+		font-size: 12px;
+	}
+	.reason__list{
+		border-bottom: 1px solid $borderGrey;
+	}
+	.reason__item{
+		color: $textColor;
+		font-size: 18px;
+		font-weight: $regular;
+		display: flex;
+		align-items: center;
+		&:before{
+			content: url(../images/icon-check.svg);
+			margin-right: 6px;
+			height: 21px;
+			width: 21px;
+		}
+	}
+	&__header{
+		font-size: 21px;
+		color: $headerColor;
+		font-weight: $bold;
+	}
+	.copyright{
+		font-size: 15px;
+		color: rgba(91,96,107,.42);
+	}
+	&__button{
+		font-weight: 500;
+		border: none;
+		display: block;
+		width: 100%;
+		height: 58px;
+		line-height: 58px;
+		font-size: 21px;
+		cursor: pointer;
+	}
+	&__terms{
+		.invalid-feedback{
+			position: absolute;
+			left: 0;
+		}
+		.label__link{
+			transition: all .3s;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		border-top: 1px solid $borderGrey;
+		text-align: center;
+		.custom-checkbox{
+			display: inline-block;
+			position: relative;
+		}
+		.custom-control-label{
+			color: $headerColor;
+			font-size: 15px;
+			font-weight: $medium;
+		}
+	}
+	&__gift{
+		font-size: 13px;
+		color: $textColor;
+		font-weight: $medium;
+		&--active{
+			display: none;
+			color: $red;
+			font-weight: $bold;
+			font-size: 38px;
+		}
+		&:before{
+			content: url(../images/icon-coupon-code.svg);
+			width: 16px;
+			height: 15px;
+			margin-right: 4px;
+		}
+	}
+	&__wrapper{
+		border: 3px solid $borderGrey;
+		background-color: $lightBlue;
+	}
+	.thank__header{
+		&:before{
+			content: url(../images/icon-signup.svg);
+			width: 40px;
+			height: 52px;
+			margin-right: 12px;
+		}
+	}
+}
+.promo-confirm{
+	display: none;
+	height: 21px;
+	width: 21px;
+	position: absolute;
+	right: 11px;
+	top: 35px;
+	background-image: url(../images/icon-check.svg);
+	background-repeat: no-repeat;
+}
+.work{
+	&__item{
+		max-width: 63px;
+	}
+	&__text{
+		font-size: 13px;
+		color: $headerColor;
+		font-weight: $medium;
+	}
+	&__header{
+		font-size: 21px;
+		font-weight: $medium;
+		color: $headerColor;
+	}
+}
+
+.signup__promo{
+	position: relative;
+}
+.promo__button{
+	position: absolute;
+	right: 0;
+	top: 29px;
+	font-size: 15px;
+	font-weight: 500!important;
+	background-color: $deepBlue!important;
+	border-color: #365d96!important;
+	border-radius: 0 .25rem .25rem 0!important;
+	&:hover{
+		background-color: darken($deepBlue, 10%) !important;
+	}
+}
+.required__label{
+	font-size: 17px;
+	font-weight: $medium;
+	position: relative;
+	color: $headerColor;
+	&:after{
+		content: '*';
+		position: absolute;
+		right: -10px;
+		top: 0;
+		color: $red;
+	}
+}
+.signup__label{
+	font-size: 17px;
+	font-weight: $medium;
+	color: $headerColor;
+}
+@media (max-width: 991px){
+	.promo__button{
+		top: 29px;
+	}
+}
+@media (max-width: 480px){
+	.thank__header{
+		font-size: 40px;
+	}
+	.signup__gift--active{
+		font-size: 30px;
+	}
+}
+@media (max-width: 320px){
+	.signup__terms{
+		.custom-control-label{
+			font-size: 12px;
+		}
+	}
+}

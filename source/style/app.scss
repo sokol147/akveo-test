@@ -1,0 +1,31 @@
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/fonts';
+@import 'common/base';
+@import 'common/sprite-img';
+@import 'blocks/**/*';
+
+
+
+
+$status-colors: (
+  primary: #000,
+  success: #27BA6C,
+  info: #03a9f4,
+  warning: #FF8833,
+  danger: #ff1a1a
+);
+h1,h2,h3,h4{
+	font-family: 'Montserrat', sans-serif!important;
+}
+.button-default{
+	color: $white !important;
+	background-color: $green;
+	border-radius: 50px;
+	/* box-shadow: 0 2px 0 rgba(42,157,40,1); */
+	transition: all .3s;
+	&:hover{
+		background-color: darken($green, 10%);
+		text-decoration: none;
+	}
+}

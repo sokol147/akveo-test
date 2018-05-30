@@ -1,0 +1,35 @@
+body, html{
+	margin:0;
+	height: 100%;
+	font-family: 'Roboto', sans-serif !important;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+html{
+	font-size: 16px;
+	line-height: 1.6;
+	-webkit-font-smoothing:antialised;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 320px){
+	html{
+		font-size: 14px;
+	}
+}
+@media (max-width: 991px){
+	html{
+		font-size: 15px;
+	}
+}

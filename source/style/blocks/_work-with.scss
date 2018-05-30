@@ -1,0 +1,125 @@
+.work-with{
+	padding: 4.5rem 0 4.3rem;
+	background-color: rgba(244,246,251,.52);
+	&__icon{
+		display: inline-block;
+		/* box-shadow: 0 0 4px rgba(100,100,100,.5); */
+		border: 1px solid #e3e3e3;
+		border-radius: 5px;
+	}
+	&__header{
+		font-size: 16px;
+		color: $headerColor;
+		font-weight: $bold;
+		min-width: 105px;
+		margin-bottom: 0;
+		margin-right: 20px;
+		padding-top: 20px;
+	}
+	&__text{
+		font-size: 13px;
+		color: $headerColor;
+		font-weight: $bold;
+		margin-bottom: 0;
+	}
+	&__list{
+		width: 75%;
+	}
+}
+.youtube__item{
+	.work-with__text{
+		max-width: 60px;
+	}
+}
+.casino__item{
+	.work-with__text{
+		max-width: 52px;
+	}
+}
+.adult__item{
+	.work-with__text{
+		max-width: 81px;
+	}
+}
+.i-youtube{
+	@include retina-sprite($youtube-group);
+}
+.i-casino{
+	@include retina-sprite($casino-group);
+}
+.i-adult{
+	@include retina-sprite($adult-websites-group);
+}
+.i-shopping{
+	@include retina-sprite($online-shopping-group);
+}
+.i-sharing{
+	@include retina-sprite($p2p-sharing-group);
+}
+.i-android{
+	@include retina-sprite($android-group);
+}
+.i-ios{
+	@include retina-sprite($ios-group);
+}
+
+@media (max-width: 768px){
+	.work-with__text{
+		display: none;
+	}
+	.work-with__item{
+		width: 33.33%;
+	}
+	.avaliable__list{
+		.work-with__item{
+			width: 50%;
+			justify-content: center;
+		}
+	}
+}
+@media (max-width: 576px){
+	.work-with__header{
+		width: 100%;
+		margin-right: 0;
+	}
+	.work-with__list{
+		width: 100%;
+	}
+}
+@media (max-width: 411px){
+	.work-with__list{
+		justify-content: center;
+	}
+	.work-with__item{
+		margin-bottom: 10px;
+	}
+	.avaliable__list{
+		flex-wrap: wrap;
+		width: 100%;
+		.work-with__item{
+			&:first-child{
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+@media (max-width: 359px){
+	.work-with__list{
+		flex-wrap: wrap;
+	}
+	.avaliable__list{
+		.work-with__item{
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 320px){
+	.work-with{
+		padding: 2rem 0 1.75rem;
+	}
+}
+@media (max-width: 480px){
+	.work-with{
+		padding: 2.5rem 0 2.25rem;
+	}
+}

@@ -1,0 +1,15 @@
+.navbar{
+	font-size: 16px;
+}
+.navbar-nav{
+	.nav-link{
+		color: $textLightGrey;
+		font-weight: $medium;
+		&:hover{
+			color: $textColor;
+		}
+	}
+}
+.button-header{
+	padding: 9px 26px 8px !important;
+}

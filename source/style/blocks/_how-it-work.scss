@@ -1,0 +1,21 @@
+.how{
+	background-color: $lightBlue;
+	padding: 7rem 0;
+	&__image{
+		max-width: 100%;
+		&-big{
+			max-width: 100%;
+			display: none;
+		}
+	}
+}
+@media (-webkit-min-device-pixel-ratio:2)
+,(-o-min-device-pixel-ratio:2/1)
+,(min-resolution:192dpi){
+	.how__image{
+		display: none;
+		&-big{
+			display: block;
+		}
+	}
+}

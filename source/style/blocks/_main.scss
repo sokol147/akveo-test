@@ -1,0 +1,87 @@
+.main{
+	.container{
+		background: url(../images/hero-image.png) no-repeat 98% center;
+	}
+	&__picture{
+		display: none;
+	}
+}
+.main-screen{
+	padding: 11rem 0;
+	&__header{
+		font-size: 53px;
+		font-weight: $bold;
+		max-width: 450px;
+		color: $textBlue;
+	}
+	&__text{
+		font-size: 29px;
+		font-weight: $regular;
+		color: $textGrey;
+	}
+	&__link{
+		color: $red;
+		transition: all .3s;
+		&:hover{
+			color: darken($red, 10%);
+		}
+	}
+	&__btn{
+		width: 275px;
+		height: 58px;
+		display: block;
+		font-size: 23px;
+		color: $white;
+		font-weight: $medium;
+		text-align: center;
+		line-height: 58px;
+	}
+}
+@media (max-width: 991px){
+	.main{
+		&__picture{
+			display: block;
+			margin: 1.5rem 0;
+		}
+		&__image{
+			display: block;
+			&-big{
+				display: none;
+			}
+		}
+		.container{
+			background: none;
+		}
+	}
+}
+@media (max-width: 480px){
+	.main-screen__header{
+		font-size: 35px;
+	}
+	.main-screen__text{
+		font-size: 22px;
+	}
+	.main-screen{
+		padding: 3rem 0;
+	}
+}
+@media (max-width: 320px){
+	.main-screen__header{
+		font-size: 32px;
+	}
+	.main-screen__text{
+		font-size: 21px;
+	}
+}
+@media (-webkit-min-device-pixel-ratio:2)
+,(-o-min-device-pixel-ratio:2/1)
+,(min-resolution:192dpi){
+	.main__image{
+		display: none;
+		&-big{
+			display: block;
+			max-width: 100%;
+			width: 150px;
+		}
+	}
+}

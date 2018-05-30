@@ -1,0 +1,105 @@
+/* Large Devices, Wide Screens */
+
+@mixin wide() {
+    @media screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@mixin desktop() {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@mixin tablet() {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@mixin mobile() {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@mixin iphone() {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+
+
+@mixin retina() {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+        @content;
+    }
+}
+
+
+%clearfix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin centered($axis: 'both') {
+    position: absolute;
+    @if $axis=='x' {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if $axis=='y' {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @if $axis=='both' {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@mixin rem($size){
+    font-size:($size/16) + rem; 
+}
+
+
+@mixin scrollbar() {
+    &::-webkit-scrollbar{
+        @content
+    }
+}
+
+@mixin scrollbar-track() {
+    &::-webkit-scrollbar-track{
+        @content
+    }
+}
+@mixin scrollbar-thumb() {
+    &::-webkit-scrollbar-thumb{
+        @content
+    }
+}
+@mixin scrollbar-track-piece() {
+    &::-webkit-scrollbar-track-piece{
+        @content
+    }
+}
