@@ -51,13 +51,10 @@ for(var p in a){
 }
 */
 
-var a = [1,2,3,4,5,'asdf',6,7,'asdf',8,'asdf',9];
-/*var i;
-var total = 0
+var o = {x: 1, y: {z: [false, null, '']}};
 
-for(i = 0; i < a.length; i++){
-	console.log(a[i]);
-}*/
+var p = JSON.stringify(o)
+console.log(p);
 
-delete a[0];
-console.log(a);
+var c = JSON.parse(p);
+console.log(c);
