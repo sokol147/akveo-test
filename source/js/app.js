@@ -51,10 +51,19 @@ for(var p in a){
 }
 */
 
-var o = {x: 1, y: {z: [false, null, '']}};
+var a = [1,2,3,4,'hi',true,'hohoho',5,6,7];
+console.log(Array.isArray(a))
+var b = [];
+for(var i = 0; i < a.length; i++){
+	if(typeof a[i] === 'number'){
+		b.push(a[i]);
+	}
+}
+console.log(b);
 
-var p = JSON.stringify(o)
-console.log(p);
+var sumOfSquares = 0;
+b.forEach(function(x){
+	sumOfSquares += x * x;
+});
 
-var c = JSON.parse(p);
-console.log(c);
+console.log(sumOfSquares)
