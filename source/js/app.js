@@ -51,7 +51,7 @@ for(var p in a){
 }
 */
 
-var a = [1,2,3,4,'hi',true,'hohoho',5,6,7];
+/*var a = [1,2,3,4,'hi',true,'hohoho',5,6,7];
 console.log(Array.isArray(a))
 var b = [];
 for(var i = 0; i < a.length; i++){
@@ -66,4 +66,17 @@ b.forEach(function(x){
 	sumOfSquares += x * x;
 });
 
-console.log(sumOfSquares)
+console.log(sumOfSquares)*/
+
+var regExpUrl = /(\w+):\/\/([\w.]+)\/(\S*)/;
+var text = 'Wizit my home page https://www.instagram.com/august.sokol';
+var result = text.match(regExpUrl);
+
+if(result != null){
+	var fullurl = result[0];
+	var protocol = result[1];
+	var host = result[2];
+	var path = result[3];
+}
+
+console.log(path);
