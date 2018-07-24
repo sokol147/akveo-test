@@ -68,7 +68,7 @@ b.forEach(function(x){
 
 console.log(sumOfSquares)*/
 
-var regExpUrl = /(\w+):\/\/([\w.]+)\/(\S*)/;
+/*var regExpUrl = /(\w+):\/\/([\w.]+)\/(\S*)/;
 var text = 'Wizit my home page https://www.instagram.com/august.sokol';
 var result = text.match(regExpUrl);
 
@@ -79,4 +79,12 @@ if(result != null){
 	var path = result[3];
 }
 
-console.log(path);
+console.log(path);*/
+
+function displayTime(){
+	var elt = document.getElementById('clock');
+	var now = new Date();
+	elt.innerHTML = now.toLocaleTimeString();
+	setTimeout(displayTime, 1000);
+}
+window.onload = displayTime;
