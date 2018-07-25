@@ -1,2 +1,20 @@
+- var menu = ['О компании', 'Продукция', 'Благотворительность', 'Пресс-центр', 'Кулинарный клуб', 'Контакты']
+- var language = ['Рус', 'Eng']
+
 header.header
-	h4#clock here
+	.container-fluid
+		.row
+			.col-lg-12.d-flex
+				a(href='/index.html').logo__link
+					img(src='./templates/images/logo.png' alt='logo')
+				ul.menu__list.d-flex
+					each item in menu
+						li.menu__item
+							a.menu__link(href='#')= item
+				ul.language-toggle.d-flex
+					each item in language
+						li.language-toggle__item
+							a.language-toggle__link(href='#')= item
+				.search
+					img(src='./templates/images/search.png' alt='search-icon').search__icon
+					input(type='text').search__input

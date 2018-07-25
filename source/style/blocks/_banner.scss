@@ -1,0 +1,12 @@
+.banner{
+	background-color: $banner-color;
+	color: #fff;
+	padding: 14px 0 13px;
+	&__text{
+		margin-bottom: 0;
+		font-size: 14px;
+		font-weight: bold;
+		margin-right: 12px;
+		text-align: center;
+	}
+}
