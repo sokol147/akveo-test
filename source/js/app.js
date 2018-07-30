@@ -11,5 +11,25 @@ $(document).ready(function() {
 		e.preventDefault;
 		$('.search__input').toggleClass('search__input--active');
 	});
+
+	$('.inc').on('click', function(e){
+		e.preventDefault();
+		for(var i = 0; i < document.images.length; i++){
+			document.images[i].style.width = document.images[i].width + 10 + 'px';
+		}
+	})
+	$('.deg').on('click', function(e){
+		e.preventDefault();
+		for(var i = 0; i < document.images.length; i++){
+			document.images[i].style.width = document.images[i].width - 10 + 'px';
+		}
+	})
+
+var form = document.getElementsByClassName('form');
+
+var para = document.getElementsByClassName('text');
+$('.text').append(' lololo');
+
+
   svg4everybody();
 });
