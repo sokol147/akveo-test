@@ -28,7 +28,7 @@ $(document).ready(function() {
 var form = document.getElementsByClassName('form');
 
 var para = document.getElementsByClassName('text');
-$('.text').append(' lololo');
+$('.text').append(' lololol');
 
 
   svg4everybody();
