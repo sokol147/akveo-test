@@ -1,12 +1,26 @@
+- var menu = ['menu', 'options', 'home', 'news', 'works']
 section.test-js
 	img(src='./templates/images/search.png')
 	img(src='./templates/images/search.png')
 	img(src='./templates/images/search.png')
 	a(href='#').inc increes icons
-	a(href='#').deg degrees icons
+	a(href='#').dec decrees icons
 section.test
-	form(class='form' disabled data-counter='1')
-		input
-		input
-		input
+	form(class='form' disabled data-counter='1' name='shipping')
+		input(type='radio' name='mathod' value='0')
+		input(type='radio' name='mathod' value='1' checked)
+		input(type='radio' name='mathod' value='2')
+	form(class='form_one' name='fio')
+		input(type='text' name='name' value='Kola')
+		input(type='text' name='secondname' value='Koka')
+		input(type='text' name='therdname' value='My name is')
 	p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, minima.
+nav#menu
+	ul.menu__list
+		each item in menu
+			li.menu__item
+				a(href='#').menu__link= item
+section.content
+a.toTop(href='#') To top
+p#newPara Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cumque atque aliquam temporibus? Vel voluptates, consequatur aut provident officiis. Atque tempore sit inventore ratione impedit dolore blanditiis excepturi accusantium, itaque aspernatur eum voluptates nihil voluptatibus ut. Dignissimos numquam illo sapiente voluptate temporibus. Facilis, sed consequatur. Doloribus necessitatibus error voluptatum inventore.
+#editor(contenteditable spellcheck) Ckick for edit
