@@ -5,11 +5,13 @@ section.test-js
 	img(src='./templates/images/search.png')
 	a(href='#').inc increes icons
 	a(href='#').dec decrees icons
+	button(type='button' id='myBtn') Click here
 section.test
-	form(class='form' disabled data-counter='1' name='shipping')
+	form(class='form' disabled data-counter='1' name='shipping' id='shipping')
 		input(type='radio' name='mathod' value='0')
 		input(type='radio' name='mathod' value='1' checked)
 		input(type='radio' name='mathod' value='2')
+		button(type='submit') Send
 	form(class='form_one' name='fio')
 		input(type='text' name='name' value='Kola')
 		input(type='text' name='secondname' value='Koka')
@@ -21,6 +23,7 @@ nav#menu
 			li.menu__item
 				a(href='#').menu__link= item
 section.content
+	input#zip(type='text' data-allowed-chars='0123456789' data-messageid='zipwarn')
+	span#zipwarn Only numbers
 a.toTop(href='#') To top
-p#newPara Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cumque atque aliquam temporibus? Vel voluptates, consequatur aut provident officiis. Atque tempore sit inventore ratione impedit dolore blanditiis excepturi accusantium, itaque aspernatur eum voluptates nihil voluptatibus ut. Dignissimos numquam illo sapiente voluptate temporibus. Facilis, sed consequatur. Doloribus necessitatibus error voluptatum inventore.
-#editor(contenteditable spellcheck) Ckick for edit
+a.arrowBack(href='#')
