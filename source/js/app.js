@@ -12,22 +12,6 @@ $(document).ready(function() {
 		$('.search__input').toggleClass('search__input--active');
 	});
 
-	$('.inc').on('click', function(e){
-		e.preventDefault();
-		for(var i = 0; i < document.images.length; i++){
-			document.images[i].style.width = document.images[i].width + 5 + 'px';
-		}
-	})
-	$('.dec').on('click', function(e){
-		e.preventDefault();
-		for(var i = 0; i < document.images.length; i++){
-			document.images[i].style.width = document.images[i].width - 5 + 'px';
-		}
-	})
-	$('.toTop').on('click',function(e){
-		e.preventDefault();
-		window.scrollTo(0,0);
-	});
 
 /*var shipping_method
 var form = document.forms.shipping;
@@ -107,9 +91,7 @@ function inputValidation(){
 }
 inputValidation();
 
-var request = new XMLHttpRequest();
-
-request.open('GET','data.cvs');
+$('#mail').val('Enter your mail')
 
 
   svg4everybody();

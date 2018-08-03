@@ -1,29 +1,14 @@
-- var menu = ['menu', 'options', 'home', 'news', 'works']
-section.test-js
-	img(src='./templates/images/search.png')
-	img(src='./templates/images/search.png')
-	img(src='./templates/images/search.png')
-	a(href='#').inc increes icons
-	a(href='#').dec decrees icons
-	button(type='button' id='myBtn') Click here
-section.test
-	form(class='form' disabled data-counter='1' name='shipping' id='shipping')
-		input(type='radio' name='mathod' value='0')
-		input(type='radio' name='mathod' value='1' checked)
-		input(type='radio' name='mathod' value='2')
-		button(type='submit') Send
-	form(class='form_one' name='fio')
-		input(type='text' name='name' value='Kola')
-		input(type='text' name='secondname' value='Koka')
-		input(type='text' name='therdname' value='My name is')
-	p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, minima.
-nav#menu
-	ul.menu__list
-		each item in menu
-			li.menu__item
-				a(href='#').menu__link= item
-section.content
-	input#zip(type='text' data-allowed-chars='0123456789' data-messageid='zipwarn')
-	span#zipwarn Only numbers
-a.toTop(href='#') To top
-a.arrowBack(href='#')
+- var menu = ['Home','Work','Portfolio','About us', 'Contacts']
+section.section-1.section
+	form(name='contact' id='contact')
+		label Enter email
+		input#mail(type='text' value='12345678@mail.com')
+		label Enter password
+		input#pass(type='password' value='example')
+		button#submit(type='submit') Log in
+	nav#main-nav
+		ul.menu
+			each item in menu
+				li.menu__item
+					a(href='#').menu__link= item
+section.section.section-2
