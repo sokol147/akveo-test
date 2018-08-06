@@ -91,7 +91,23 @@ function inputValidation(){
 }
 inputValidation();
 
-$('#mail').val('Enter your mail')
+$('#mail').val('Enter your mail');
+
+
+// TODO list on jQuery
+var input = $('#todo_input');
+var ul = $('#todo_list');
+var btn = $('#todo_btn');
+
+btn.on('click',function(e){
+  e.preventDefault();
+  ul.append('<li>'+ input.val() +'</li>');
+  input.val(function(){
+    return this.defaultValue;
+  })
+})
+
+// end TODO list
 
 
   svg4everybody();
