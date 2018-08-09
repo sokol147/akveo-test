@@ -1,18 +1,6 @@
-$(document).ready(function() {
-	$('.banner__close').on('click', function(){
-		$('.banner').slideUp();
-	});
-	$('.menu__btn').on('click',function(e){
-		e.preventDefault;
-		$(this).toggleClass('menu__btn--active');
-		$('.menu__mobile').toggleClass('menu__mobile--active');
-	});
-	$('.search__icon').on('click', function(e){
-		e.preventDefault;
-		$('.search__input').toggleClass('search__input--active');
-	});
+$(document).ready(function(){
 
-
+})
 /*var shipping_method
 var form = document.forms.shipping;
 var elem = form.elements;
@@ -91,24 +79,92 @@ function inputValidation(){
 }
 inputValidation();
 
-$('#mail').val('Enter your mail');
 
 
-// TODO list on jQuery
-var input = $('#todo_input');
-var ul = $('#todo_list');
-var btn = $('#todo_btn');
 
-btn.on('click',function(e){
-  e.preventDefault();
-  ul.append('<li>'+ input.val() +'</li>');
-  input.val(function(){
-    return this.defaultValue;
-  })
-})
+// Radial svg diagram
 
-// end TODO list
+function pieChart(data, width, height, cx, cy, r, colors, labels, lx, ly){
+  var svgns = 'http://www.w3.org/2000/svg';
+
+  var chart = document.createElementNS(svgns,'svg:svg');
+  chart.setAttribute('width', width);
+  chart.setAttribute('height', height);
+  chart.setAttribute('viewBox','0 0 ' + width + ' ' + height);
+
+  var total = 0;
+  for(var i = 0; i < data.length; i++){
+    total += data[i];
+  }
+
+  var angles = [];
+  for(var i = 0; i < data.length; i++){
+    angles[i] = data[i]/total * Math.PI * 2;
+  }
+
+  startangle = 0;
+  for(var i = 0; i < data.length; i++){
+    var endangle = startangle + angles[i];
+
+    var x1 = cx + r * Math.sin(startangle);
+    var y1 = cy - r * Math.cos(startangle);
+    var x2 = cx + r * Math.sin(endangle);
+    var y2 = cy - r * Math.cos(endangle);
+
+    var big = 0;
+    if(endangle - startangle > Math.PI) big = 1;
+
+    var path = document.createElementNS(svgns, 'path');
+
+    var d = 'M ' + cx + ',' + cy + ' L ' + x1 + ',' + y1 + ' A ' + r +
+    ',' + r + ' 0 ' + big + ' 1 ' + x2 + ',' + y2 + ' Z';
+
+    path.setAttribute('d', d);
+    path.setAttribute('fill', colors[i]);
+    path.setAttribute('stroke', 'black');
+    path.setAttribute('stroke-width', '2');
+    chart.appendChild(path);
+
+    startangle = endangle;
+
+    var icon = document.createElementNS(svgns, 'rect');
+    icon.setAttribute('x', lx);
+    icon.setAttribute('y', ly + 30 * i);
+    icon.setAttribute('width', 20);
+    icon.setAttribute('height', 20);
+    icon.setAttribute('fill', colors[i]);
+    icon.setAttribute('stroke', 'black');
+    icon.setAttribute('stroke-width', '2');
+    chart.appendChild(icon);
+
+    var label = document.createElementNS(svgns, 'text');
+    label.setAttribute('x' , lx + 30);
+    label.setAttribute('y' , ly + 30 * i + 18);
+    label.appendChild(document.createTextNode(labels[i]));
+    chart.appendChild(label);
+  }
+  return chart;
+}
+
+var section = document.getElementById('section-3');
+section.appendChild(pieChart([12, 23, 34, 45],
+    640, 400, 200, 200, 150,
+    ['red','blue', 'yellow', 'green'],
+    ['Север', 'Юг', 'Восток', 'Запад'], 400, 100),false);
+
+var canvas = document.getElementById('my_canvas_id');
+var c = canvas.getContext('2d');
+
+c.beginPath();
+c.moveTo(400, 0);
+c.lineTo(400, 50);
+c.lineTo(350, 50);
+c.lineTo(350, 0);
+c.closePath();
 
 
-  svg4everybody();
-});
+c.fillStyle = '#c3c3c3';
+c.strokeStyle = '#000';
+c.lineWidth = 1;
+c.fill();
+c.stroke();
