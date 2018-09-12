@@ -1,0 +1,16 @@
+- var footer = ['app api', 'support']
+- var social = ['facebook', 'twitter', 'instagram', 'vimeo-v']
+footer.footer
+  .footer-content
+    .footer__copyright
+      a(href='/index.html').footer__logo Geotrack
+      span.copyright__text © Geotrack Inc. All right reserved 2016
+    ul.footer__menu.menu__list
+      each item in footer
+        li.menu__item
+          a.menu__link(href='#')=item
+    ul.social__list
+      each item in social
+        li.social__item
+          a.social__link(href='#')
+            i.social__icon.fab(class=`fa-${item}`)

@@ -1,0 +1,58 @@
+-
+  var contacts = [
+    {
+      title: 'Geo Type:',
+      info: 'Government'
+    },{
+      title: 'Short Geo:',
+      info: 'CA_University'
+    },{
+      title: 'Address:',
+      info: 'United States, California LA, Sarigza Avenue 234, 44A'
+    },{
+      title: 'Email:',
+      info: 'ca@university@gmail.com',
+      link: 'ca@university@gmail.com'
+    },{
+      title: 'Expiere:',
+      info: '31 Oct 2016'
+    },{
+      title: 'Privacy:',
+      info: 'Enable'
+    }
+  ]
+section.main
+  .main-content
+    .university
+      .university__info.info
+        .info__main
+          .info__link
+            img(src='templates/images/univer-logo.jpg' alt='California University').university__logo
+            img(src='templates/images/qr.jpg' alt='Universify qr-code').university__qr
+            a(href='#').university__link
+              img(src='templates/images/arrow-right.jpg')
+          .info__title
+            .university__name California University
+            .university__id ID: 1238923748903478914751089
+            a.university__copy(href='#') Copy in buffer
+        .info__contacts.contacts
+          ul.contacts__list
+            each item in contacts
+              if item.link
+                li.contacts__item
+                  p.contacts__title= item.title
+                  a(href=`mailto:${item.link}`).contacts__link= item.link
+              else
+                li.contacts__item
+                  p.contacts__title= item.title
+                  p.contacts__info= item.info
+        .info__edit
+          a(href='#').btn.btn--edit Edit Profile
+      .university__coordinates
+        .university__message.message
+          img.message__icon(src='templates/images/message-icon.jpg' alt='message-icon')
+          div.message__inner
+            p.message__header Geo Message
+            p.message__text The results of yesterday's election came as a surprise to most of us, regardless of our political views. It will take time for us to process and understand the meaning of the vote.
+        .universify__map.map
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.506338631943!2d-79.886379484689!3d40.06411638493307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88351afb41580d47%3A0x9020049fb3d5b0ea!2sCalifornia+University+of+Pennsylvania!5e0!3m2!1sru!2sby!4v1536753089169" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>

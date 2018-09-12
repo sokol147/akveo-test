@@ -1,0 +1,209 @@
+.main{
+  margin-top: 90px;
+  &-content{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 35px 0 37px;
+  }
+  .contacts{
+    padding: 30px 35px;
+    border-bottom: 1px solid $borderColor;
+    &__link{
+      color: $universityID;
+      text-decoration: none;
+      width: 210px;
+      display: block;
+    }
+    &__item{
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: space-between;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    &__title{
+      color: $universityTitle;
+      font-weight: 600;
+    }
+    &__info{
+      color: $universityInfo;
+      width: 210px;
+    }
+  }
+  .info{
+    max-width: 423px;
+    width: 100%;
+    margin-right: 35px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.21);
+    &__edit{
+      padding: 30px 50px;
+    }
+    &__main{
+      padding: 25px 35px 20px;
+      border-bottom: 1px solid $borderColor;
+      display: flex;
+      flex-wrap: wrap;
+      .info__title{
+        width: 100%;
+      }
+      .info__link{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 22px;
+      }
+    }
+  }
+  .message{
+    padding: 20px 25px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    &__icon{
+      margin-right: 22px;
+    }
+    &__inner{
+      margin-top: -5px;
+    }
+    &__header{
+      color: $messgeHeaderColor;
+      font-weight: 500;
+    }
+    &__text{
+      color: $universityInfo;
+    }
+  }
+  .map{
+    height: 570px;
+    overflow: hidden;
+  }
+  .message,
+  .map{
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.21);
+  }
+  .university{
+    display: flex;
+    &__copy{
+      width: 105px;
+      height: 35px;
+      display: block;
+      background-color: $lightBlueBtn;
+      color: $btnColor;
+      text-decoration: none;
+      font-size: 14px;
+      text-align: center;
+      line-height: 35px;
+      transition: .3s;
+      border-radius: 3px;
+      &:hover{
+        background-color: darken($lightBlueBtn, 10%);
+      }
+    }
+    &__name{
+      font-size: 18px;
+      color: $headerColor;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    &__id{
+      color: $universityID;
+      margin-bottom: 8px;
+    }
+    &__logo{
+      border-radius: 50%;
+      margin-right: 25px;
+    }
+    &__link{
+      margin-left: auto;
+    }
+  }
+}
+.btn{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: .3s;
+  &--edit{
+    width: 100%;
+    border-radius: 5px;
+    height: 58px;
+    line-height: 58px;
+    background-color: $btnPink;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    &:hover{
+      background-color: darken($btnPink, 10%);
+    }
+  }
+}
+
+@media screen and (max-width: 1240px){
+  .main{
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 998px){
+  .main .contacts__item{
+    justify-content: flex-start;
+  }
+  .main .contacts__title{
+    width: 145px;
+  }
+  .university{
+    flex-wrap: wrap;
+  }
+  .main .info{
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .main .info__main{
+    padding: 15px 25px 10px;
+  }
+  .main .contacts{
+    padding: 20px 25px;
+  }
+  .main .info__edit{
+    padding: 20px 40px;
+  }
+  .main .map{
+    height: 503px;
+  }
+  .main .message{
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 610px){
+  .main{
+    margin-top: 123px;
+  }
+  .main-contant{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 540px){
+  .main .map{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .main .contacts__item{
+    flex-wrap: wrap;
+  }
+  .main .contacts__title{
+    width: 100%;
+  }
+  .main .contacts__info{
+    width: 100%;
+  }
+  .main .contacts__link{
+    width: 100%;
+  }
+}

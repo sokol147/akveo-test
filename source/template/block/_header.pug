@@ -1,0 +1,34 @@
+-
+  var manu = [
+    {
+      name: 'geomap',
+      class: 'menu__link--active'
+    },{
+      name: 'home',
+    },{
+      name: 'about',
+    },{
+      name: 'features',
+    },{
+      name: 'pricing'
+    }
+  ]
+header.header
+  .header-content
+    .navbar__logo.logo
+      a.logo__link(href='/index.html')
+        img(src='templates/images/logo.jpg' alt='logo').logo__image
+      p.logo__name Geotrack
+        span.version ver 1.0
+    ul.navbar__nav.menu__list#menu-list
+      each item in manu
+        li.menu__item
+          a.menu__link(href='#' class=`${item.class}`)= item.name
+    .navbar__search
+      i.fas.fa-search.navbar__icon
+      input.navbar__input(type='text' placeholder='Search geotrack')
+    a(href='#').menu-btn#menu
+      span.menu-btn__line
+    .navbar__user.user
+      a(href='#').user__link
+        img(src='templates/images/user.jpg' alt='user').user__image
