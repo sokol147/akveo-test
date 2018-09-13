@@ -32,8 +32,8 @@
     }
   }
   .info{
-    max-width: 423px;
-    width: 100%;
+    // width: 100%;
+    min-width: 423px;
     margin-right: 35px;
     border-radius: 5px;
     background-color: #fff;
@@ -67,6 +67,7 @@
     }
     &__inner{
       margin-top: -5px;
+      margin-bottom: 15px;
     }
     &__header{
       color: $messgeHeaderColor;
@@ -89,6 +90,7 @@
   .university{
     display: flex;
     &__coordinates{
+      width: 100%;
       display: flex;
       flex-direction: column;
     }
@@ -167,7 +169,8 @@
     flex-wrap: wrap;
   }
   .main .info{
-    max-width: 100%;
+    width: 100%;
+    min-width: auto;
     margin-right: 0;
     margin-bottom: 25px;
   }
