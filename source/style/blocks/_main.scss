@@ -77,7 +77,7 @@
     }
   }
   .map{
-    height: 570px;
+    flex-grow: 1;
     overflow: hidden;
   }
   .message,
@@ -88,6 +88,10 @@
   }
   .university{
     display: flex;
+    &__coordinates{
+      display: flex;
+      flex-direction: column;
+    }
     &__copy{
       width: 105px;
       height: 35px;
@@ -142,6 +146,10 @@
     }
   }
 }
+#map__wrapper{
+  height: 100%;
+  z-index: 0;
+}
 
 @media screen and (max-width: 1240px){
   .main{
@@ -172,7 +180,7 @@
   .main .info__edit{
     padding: 20px 40px;
   }
-  .main .map{
+  .main #map__wrapper{
     height: 503px;
   }
   .main .message{
@@ -188,7 +196,7 @@
   }
 }
 @media screen and (max-width: 540px){
-  .main .map{
+  .main #map__wrapper{
     height: 300px;
   }
 }
